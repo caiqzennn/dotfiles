@@ -1,0 +1,103 @@
+/* ===========================
+   BASE
+   =========================== */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+/* Waybar 100% transparente */
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+
+#waybar {
+    background: transparent;
+}
+
+/* ===========================
+   MÓDULOS — fundo branco translúcido
+   (blur aplicado pelo Hyprland, não pelo CSS)
+   =========================== */
+
+#custom-mpris-prev,
+#custom-mpris-toggle,
+#custom-mpris-next,
+#mpris,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#tray,
+#backlight,
+#workspaces {
+    background: rgba(255, 255, 255, 0.03); /* leve branco */
+    padding: 0px 10px;
+    margin: 4px 4px;
+    border-radius: 12px;
+}
+
+/* ===========================
+   WORKSPACES
+   =========================== */
+
+#workspaces button {
+    padding: 5px;
+    margin-right: 5px;
+    background: transparent;
+    color: #e0e0e0;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    /* background: rgba(255, 255, 255, 0.25); */
+    color: #000000;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #11111b;
+}
+
+/* ===========================
+   AJUSTES INDIVIDUAIS
+   =========================== */
+
+#backlight {
+    border-radius: 12px 0 0 12px;
+}
+
+#cpu {
+    /* border-radius: 0 12px 12px 0; */
+    /* margin-right: 10px; */
+}
+
+#memory {
+    /* border-radius: 12px 0 0 12px; */
+}
+
+#window {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#tray {
+    margin-right: 10px;
+}
+
+#clock,
+#network,
+#pulseaudio,
+#pulseaudio.microphone,
+#battery {
+    color: #ffffff;
+}

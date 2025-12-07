@@ -1,0 +1,44 @@
+* {
+    background: rgba(0, 0, 0, 0.35);
+    background-alt: rgba(0, 0, 0, 0.55);
+    foreground: #FFFFFF;
+    border-color: #00ffcc;
+    border-radius: 14px;
+    spacing: 8;
+    padding: 15;
+}
+
+window {
+    width: 40%;
+    border: 2px solid @border-color;
+    background: @background-alt;
+}
+
+mainbox {
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    background: @background;
+    padding: 10;
+    border-radius: 10px;
+}
+
+listview {
+    columns: 4;
+    lines: 3;
+}
+
+element {
+    padding: 8;
+    border-radius: 10px;
+}
+
+element selected {
+    background: @border-color;
+    foreground: #000000;
+}
+ 
+ element-icon {
+    size: 48px;
+ }
